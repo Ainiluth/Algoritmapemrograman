@@ -1,0 +1,30 @@
+# open file
+data = open("data_iris.txt", "r")
+print ("Nama FIle", data.name)
+
+# read
+file_konten = data.read(100)
+print ("Isi Data:",file_konten[17:38])
+
+# closed
+data.close()
+
+# for loops
+# for i in range(1.38)
+      #print
+list_dosen =("wiwi","sinti","didi","likmin")
+list_jadwal =("senin","selasa","rabu","kamis","jumat")
+
+for i in (list_dosen):
+  for k in (list_jadwal):
+    print(i, " - ",k)
+
+# fibonanci
+n=10
+fib = [0,1]
+
+for i in range(n-2):
+  fib_lanjut = fib[i+1] + fib[i]
+  print(fib[i+1]," + ",fib[i]," = ",fib_lanjut)
+  fib.append(fib_lanjut)
+print(fib)
